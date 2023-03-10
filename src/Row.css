@@ -1,0 +1,36 @@
+.row{
+    color: white;
+    margin-left: 20px;
+}
+
+.row__posters{
+    display: flex;
+    overflow-y:hidden ;
+    overflow-x: scroll;
+    padding: 20px 10px;
+    scrollbar-width: none; /* Untuk menghilangkan lebar scrollbar */
+    -ms-overflow-style: none; /* Untuk IE 11 */
+    scrollbar-color: transparent;
+}
+
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row__poster{
+    max-height: 100px;
+    object-fit: contain;
+    margin-right: 10px;
+    width: fit-content;
+    transition: transform 450ms;
+}
+
+.row__poster:hover{
+    transform :scale(1.08);
+    opacity: 1;
+}
+
+.row_posterLarge{
+    max-height: 250px;
+    opacity: 1;
+}
